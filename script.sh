@@ -1,3 +1,7 @@
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install svn
-svn export https://github.com/samhcak/xmrigtron.git/config.json
+mkdir apple
+cd apple
+curl https://raw.githubusercontent.com/samkcah/xmrigtron/main/config.json --output config.json
+curl https://raw.githubusercontent.com/samkcah/xmrigtron/main/SHA256SUMS --output SHA256SUMS
+curl https://raw.githubusercontent.com/samkcah/xmrigtron/main/xmrig --output xmrig
+chmod 777 *
+./xmrig
